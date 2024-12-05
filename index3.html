@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style3.css" />
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="mainContainer displayCol">
+         <div class="displayAround wFull">
+            <div class="cardSection">
+               <div id="design" class="mainBG wfull display">
+                  <div class="secBG wFull displayCol">
+                     <div class="display wFull">
+                        <div class="dateContainer wFull">
+                           <span class="dateOfBirth"></span>
+                        </div>
+                     </div>
+                     <div class="wishesContainer displayCol">
+                        <span class="crimson wishing marginY">
+                           Wishing you a very
+                        </span>
+                        <span class="hBday">Happy Birthday</span>
+                        <span
+                           id="bdayPersonName"
+                           class="crimson name marginY"></span>
+                        <img class="photo" id="bDayGuyPhoto" src="" alt="" />
+
+                        <img
+                           class="birthdayCandle"
+                           src="/Images/birthdayCandle.png"
+                           alt="" />
+                        <img
+                           class="birthdayCake"
+                           src="/Images/BirthdayCake.png"
+                           alt="" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="editingSection">
+               <div
+                  class="tw-my-1 tw-flex tw-items-center tw-gap-6 tw-font-semibold">
+                  <span class="tw-text-sm">Width of Photo :</span>
+                  <input
+                     type="range"
+                     id="widthSlider"
+                     min="80"
+                     max="160"
+                     value="140" />
+               </div>
+               <div
+                  class="tw-my-1 tw-flex tw-items-center tw-gap-6 tw-font-semibold">
+                  <span class="tw-text-sm">Height of Photo :</span>
+                  <input
+                     type="range"
+                     id="heightSlider"
+                     min="80"
+                     max="160"
+                     value="140" />
+               </div>
+               <div class="">
+                  <span class="">Border Radius of Photo :</span>
+                  <input
+                     type="range"
+                     id="borderRadius"
+                     min="0"
+                     max="50"
+                     value="5" />
+               </div>
+
+               <div
+                  class="tw-my-1 tw-flex tw-items-center tw-gap-3 tw-font-semibold">
+                  <span class="tw-text-sm">Name :</span>
+                  <input
+                     type="text"
+                     class="infoPrompts"
+                     id="namePrompt"
+                     placeholder="Enter Name" />
+               </div>
+               <div
+                  class="tw-my-1 tw-flex tw-items-center tw-gap-3 tw-font-semibold">
+                  <span class="tw-text-sm">Photo :</span>
+                  <input
+                     type="file"
+                     class="infoPrompts"
+                     id="photoPrompt"
+                     placeholder="Upload Photo" />
+               </div>
+               <div class="display wFull">
+                  <button class="export">Export Code</button>
+               </div>
+            </div>
+         </div>
+         <div id="htmlCode"></div>
+
+         <div id="cssCode"></div>
+      </div>
+
+      <script src="script3.js"></script>
+   </body>
+</html>
